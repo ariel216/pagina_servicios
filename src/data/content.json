@@ -1,0 +1,115 @@
+{
+  "navbar": {
+    "logo": "Página Servicios",
+    "links": [
+      { "text": "Quiero contratar", "href": "#" },
+      { "text": "Quiero trabajar", "href": "#" }
+    ],
+    "buttons": [
+      { "text": "Ingresa", "variant": "secondary" },
+      { "text": "Registrate", "variant": "primary" }
+    ]
+  },
+  "hero": {
+    "features": [
+      { "icon": "Shield", "text": "Consulta Gratuita" },
+      { "icon": "Users", "text": "Garantía de satisfacción" },
+      { "icon": "CreditCard", "text": "Pagos protegidos" }
+    ],
+    "title": {
+      "start": "Impulsa tu negocio con el",
+      "highlight": "mejor talento remoto",
+      "end": "de América Latina"
+    },
+    "description": "Desarrolla tu negocio de manera rápida y segura. Te conectamos con miles de talentos en tu idioma y zona horaria.",
+    "buttons": [
+      { "text": "Quiero contratar", "variant": "primary" },
+      { "text": "¿Quieres trabajar?", "variant": "outline" }
+    ],
+    "images": [
+      "https://placehold.jp/150x150.png",
+      "https://placehold.jp/150x150.png",
+      "https://placehold.jp/150x150.png",
+      "https://placehold.jp/150x150.png",
+      "https://placehold.jp/150x150.png",
+      "https://placehold.jp/150x150.png"
+    ]
+  },
+  "services": {
+    "title": "DESCUBRE TALENTOS CON LAS HABILIDADES QUE NECESITAS",
+    "categories": [
+      {
+        "title": "PROGRAMACIÓN",
+        "icon": "Code",
+        "color": "blue",
+        "items": [
+          "Programación Web",
+          "WordPress",
+          "E-commerce",
+          "Apps Android & iOS"
+        ]
+      },
+      {
+        "title": "DISEÑO Y MULTIMEDIA",
+        "icon": "Palette",
+        "color": "red",
+        "items": [
+          "Diseño de logo",
+          "Diseño Web",
+          "Ilustraciones",
+          "Edición de video"
+        ]
+      },
+      {
+        "title": "MARKETING",
+        "icon": "MessageSquare",
+        "color": "green",
+        "items": [
+          "Marketing Digital",
+          "SEO",
+          "Email Marketing",
+          "Community Manager"
+        ]
+      }
+    ],
+    "cta": "Descubre todas las habilidades"
+  },
+  "footer": {
+    "columns": [
+      {
+        "title": "Empresa",
+        "links": [
+          { "text": "Sobre nosotros", "href": "#" },
+          { "text": "Blog", "href": "#" },
+          { "text": "Prensa", "href": "#" },
+          { "text": "Carreras", "href": "#" }
+        ]
+      },
+      {
+        "title": "Servicios",
+        "links": [
+          { "text": "Programación", "href": "#" },
+          { "text": "Diseño", "href": "#" },
+          { "text": "Marketing", "href": "#" },
+          { "text": "Traducción", "href": "#" }
+        ]
+      },
+      {
+        "title": "Soporte",
+        "links": [
+          { "text": "Centro de ayuda", "href": "#" },
+          { "text": "Contacto", "href": "#" },
+          { "text": "Términos y condiciones", "href": "#" },
+          { "text": "Privacidad", "href": "#" }
+        ]
+      }
+    ],
+    "social": [
+      { "icon": "Github", "href": "#" },
+      { "icon": "Twitter", "href": "#" },
+      { "icon": "Linkedin", "href": "#" },
+      { "icon": "Instagram", "href": "#" }
+    ],
+    "copyright": "© 2024 Workana. Todos los derechos reservados."
+  }
+}
