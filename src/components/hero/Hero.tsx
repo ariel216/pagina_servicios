@@ -4,9 +4,16 @@ import Button from "../ui/Button";
 import FeatureItem from "./FeatureItem";
 import ProfileGrid from "./ProfileGrid";
 import { icons } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const { features, title, description, buttons, images } = content.hero;
+
+  const navigate = useNavigate();
+
+  const handleNavigate = (route: string) => {
+    navigate(route);
+  };
 
   return (
     <div className="bg-gradient-to-r from-blue-50 to-purple-50 py-16">
@@ -33,7 +40,7 @@ const Hero = () => {
 
             <div className="flex space-x-4">
               {buttons.map((button, index) => (
-                <Button key={index} variant={button.variant as any}>
+                <Button key={index} variant={button.variant as any}  onClick={() => handleNavigate(button.route)}>
                   {button.text}
                 </Button>
               ))}

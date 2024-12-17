@@ -1,4 +1,3 @@
-import React from "react";
 import TalentHeader from "./components/TalentHeader";
 import TalentFeatures from "./components/TalentFeature";
 import TalentGrid from "./components/TalentGrid";

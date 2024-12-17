@@ -1,4 +1,3 @@
-import React from "react";
 import { Menu } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import content from "../../data/content.json";
@@ -8,7 +7,7 @@ import Button from "../ui/Button";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
 
 const Navbar = () => {
-  const { logo, links, buttons } = content.navbar;
+  const { logo } = content.navbar;
   const scrollPosition = useScrollPosition();
   const isScrolled = scrollPosition > 0;
   const location = useLocation();
@@ -39,7 +38,7 @@ const Navbar = () => {
                 <NavLink to="/hire" isScrolled={isScrolled}>
                   Quiero contratar
                 </NavLink>
-                <NavLink to="#" external isScrolled={isScrolled}>
+                <NavLink to="/jobs" isScrolled={isScrolled}>
                   Quiero trabajar
                 </NavLink>
               </>

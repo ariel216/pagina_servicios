@@ -3,7 +3,7 @@
     "logo": "Página Servicios",
     "links": [
       { "text": "Quiero contratar", "href": "#" },
-      { "text": "Quiero trabajar", "href": "#" }
+      { "text": "Quiero trabajar", "href": "#"}
     ],
     "buttons": [
       { "text": "Ingresa", "variant": "secondary" },
@@ -23,8 +23,8 @@
     },
     "description": "Desarrolla tu negocio de manera rápida y segura. Te conectamos con miles de talentos en tu idioma y zona horaria.",
     "buttons": [
-      { "text": "Quiero contratar", "variant": "primary" },
-      { "text": "¿Quieres trabajar?", "variant": "outline" }
+      { "text": "Quiero contratar", "variant": "primary", "route":"hire" },
+      { "text": "¿Quieres trabajar?", "variant": "outline",  "route":"jobs" }
     ],
     "images": [
       "https://placehold.jp/150x150.png",
@@ -111,5 +111,193 @@
       { "icon": "Instagram", "href": "#" }
     ],
     "copyright": "© 2024 Workana. Todos los derechos reservados."
-  }
+  },
+  "auth":{
+    "login": {
+      "title": "Iniciar Sesión",
+      "footer": {
+        "text": "¿No tienes una cuenta?",
+        "linkText": "Regístrate",
+        "linkTo": "/register"
+      },
+      "inputs": [
+        {
+          "label": "Correo electrónico",
+          "type": "email",
+          "id": "email",
+          "placeholder": "tu@email.com",
+          "required": true
+        },
+        {
+          "label": "Contraseña",
+          "type": "password",
+          "id": "password",
+          "placeholder": "••••••••",
+          "required": true
+        }
+      ],
+      "forgotPasswordText": "¿Olvidaste tu contraseña?",
+      "forgotPasswordLink": "#",
+      "submitButton": {
+        "text": "Iniciar Sesión"
+      }
+    },    
+    "register": {
+      "title": "Crear Cuenta",
+      "footer": {
+        "text": "¿Ya tienes una cuenta?",
+        "linkText": "Inicia Sesión",
+        "linkTo": "/login"
+      },
+      "inputs": [
+        {
+          "label": "Nombre completo",
+          "type": "text",
+          "id": "name",
+          "placeholder": "Juan Pérez",
+          "required": true
+        },
+        {
+          "label": "Correo electrónico",
+          "type": "email",
+          "id": "email",
+          "placeholder": "tu@email.com",
+          "required": true
+        },
+        {
+          "label": "Contraseña",
+          "type": "password",
+          "id": "password",
+          "placeholder": "••••••••",
+          "required": true
+        },
+        {
+          "label": "Confirmar contraseña",
+          "type": "password",
+          "id": "confirmPassword",
+          "placeholder": "••••••••",
+          "required": true
+        }
+      ],
+      "terms": {
+        "text": "Acepto los",
+        "linkText": "términos y condiciones",
+        "linkTo": "#"
+      },
+      "submitButton": {
+        "text": "Crear Cuenta"
+      }
+    }
+  },
+  
+  "talent": {
+    "header": {
+      "title": "¿ESTÁS LISTO PARA CONOCER A NUESTROS TALENTOS?",
+      "subtitle": "Plataforma líder de talento tech en América Latina"
+    },
+    "features" : [
+      {
+        "icon": "CheckCircle",
+        "text": "Profesionales con +3 años de experiencia"
+      },
+      {
+        "icon": "Award",
+        "text": "Habilidades técnicas certificadas"
+      },
+      {
+        "icon": "User2",
+        "text": "Habilidades soft verificadas"
+      },
+      {
+        "icon": "MessageSquare",
+        "text": "Nivel mínimo de inglés B2"
+      }
+    ],
+    "talents": [
+      {
+        "name": "Henry Villavicencio",
+        "role": "Fullstack Dev",
+        "country": "Ecuador",
+        "englishLevel": "Inglés fluido",
+        "experience": "+3 años de experiencia",
+        "skills": ["Javascript", "ReactJS", "Typescript"],
+        "image":
+          "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop"
+      },
+      {
+        "name": "Raquel Martins",
+        "role": "Dev React Sr",
+        "country": "Brasil",
+        "englishLevel": "Inglés fluido",
+        "experience": "+3 años de experiencia",
+        "skills": ["Flutter", "ReactJS", "Angular"],
+        "image":
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop"
+      },
+      {
+        "name": "Alex Souza",
+        "role": "Backend Dev Ssr(Node.js)",
+        "country": "Brasil",
+        "englishLevel": "Inglés fluido",
+        "experience": "+3 años de experiencia",
+        "skills": ["NodeJS"],
+        "image":
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop"
+      }
+    ]
+  },
+  "jobs": {
+    "titleCategory":"Categoría de proyectos",
+    "categories": [
+      { "id": 1, "name": "Programación y Tecnología" },
+      { "id": 2, "name": "Programación Web" },
+      { "id": 3, "name": "Diseño Web" },
+      { "id": 4, "name": "Tiendas Online (e-commerce)" },
+      { "id": 5, "name": "Wordpress" },
+      { "id": 6, "name": "Data Science" }
+    ],
+    "projectData": [
+      {
+        "title": "Integrar ChatGPT con Shopify",
+        "description":
+          "Integraremos ChatGPT con nuestro eCommerce de Shopify para que nuestros clientes puedan subir una foto y usar la IA para recomendaciones.",
+        "budget": "USD 500 - 1000",
+        "tags": ["JavaScript", "MySQL", "PHP"],
+        "country": "México"
+      },
+      {
+        "title": "Desarrollo de App Móvil para Gestión de Inventarios",
+        "description":
+          "Crear una aplicación móvil que permita gestionar inventarios en tiempo real, con sincronización en la nube.",
+        "budget": "USD 2000 - 3000",
+        "tags": ["Flutter", "Firebase", "Dart"],
+        "country": "Colombia"
+      },
+      {
+        "title": "Optimización de API en Node.js",
+        "description":
+          "Mejorar el rendimiento de una API REST construida en Node.js, reduciendo tiempos de respuesta y optimizando consultas.",
+        "budget": "USD 1000 - 1500",
+        "tags": ["Node.js", "Express", "MongoDB"],
+        "country": "Argentina"
+      },
+      {
+        "title": "Implementación de Sistema de Pagos en eCommerce",
+        "description":
+          "Integrar un sistema de pagos seguro en una tienda online, utilizando pasarelas de pago como Stripe o PayPal.",
+        "budget": "USD 800 - 1200",
+        "tags": ["React", "Stripe", "PHP"],
+        "country": "Perú"
+      },
+      {
+        "title": "Desarrollo de Plataforma de Educación Online",
+        "description":
+          "Construir una plataforma educativa en línea con funcionalidades de videoconferencias, foros y subida de materiales.",
+        "budget": "USD 3000 - 5000",
+        "tags": ["Laravel", "Vue.js", "MySQL"],
+        "country": "Chile"
+      }
+    ]
+  }  
+  
 }

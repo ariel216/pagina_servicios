@@ -2,63 +2,43 @@ import React from "react";
 import AuthCard from "../../components/auth/AuthCard";
 import FormInput from "../../components/auth/FormInput";
 import SubmitButton from "../../components/auth/SubmitButton";
+import content from "../../data/content.json";
 
 const Register = () => {
+  const { register } = content.auth;
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle registration logic here
   };
 
   return (
-    <AuthCard
-      title="Crear Cuenta"
-      footer={{
-        text: "¿Ya tienes una cuenta?",
-        linkText: "Inicia Sesión",
-        linkTo: "/login",
-      }}
-    >
+    <AuthCard title={register.title} footer={register.footer}>
       <form onSubmit={handleSubmit}>
-        <FormInput
-          label="Nombre completo"
-          type="text"
-          id="name"
-          placeholder="Juan Pérez"
-          required
-        />
-        <FormInput
-          label="Correo electrónico"
-          type="email"
-          id="email"
-          placeholder="tu@email.com"
-          required
-        />
-        <FormInput
-          label="Contraseña"
-          type="password"
-          id="password"
-          placeholder="••••••••"
-          required
-        />
-        <FormInput
-          label="Confirmar contraseña"
-          type="password"
-          id="confirmPassword"
-          placeholder="••••••••"
-          required
-        />
+        {register.inputs.map((input) => (
+          <FormInput
+            key={input.id}
+            label={input.label}
+            type={input.type}
+            id={input.id}
+            placeholder={input.placeholder}
+            required={input.required}
+          />
+        ))}
         <div className="mb-6">
           <label className="flex items-center">
             <input type="checkbox" className="mr-2" required />
             <span className="text-sm text-gray-600">
-              Acepto los{" "}
-              <a href="#" className="text-blue-600 hover:text-blue-700">
-                términos y condiciones
+              {register.terms.text}{" "}
+              <a
+                href={register.terms.linkTo}
+                className="text-blue-600 hover:text-blue-700"
+              >
+                {register.terms.linkText}
               </a>
             </span>
           </label>
         </div>
-        <SubmitButton text="Crear Cuenta" />
+        <SubmitButton text={register.submitButton.text} />
       </form>
     </AuthCard>
   );
